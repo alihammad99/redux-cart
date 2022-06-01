@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import GrayTShirt from "../images/greytshirt.jpg";
 import BlackHoddie from "../images/blackhoddie.jpg";
 import BlacktShirt from "../images/blacktshirt.jpg";
@@ -9,12 +9,6 @@ import { getNumbers } from "../actions/getAction";
 import { Link } from "react-router-dom";
 
 const Home = (props) => {
-  const [basketNumber, setBasketNumber] = useState(0);
-
-  const addToCart = () => {
-    setBasketNumber(basketNumber + 1);
-  };
-
   return (
     <div className="container">
       <div className="card">

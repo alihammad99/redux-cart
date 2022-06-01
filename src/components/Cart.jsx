@@ -35,7 +35,7 @@ const Cart = ({ basketProps, productQuantity, clearProduct }) => {
           onClick={() => clearProduct(product.tagName)}
           name="close-circle"
         ></ion-icon>
-        <img src={productImages(product)} />
+        <img alt={product.name} src={productImages(product)} />
         <span className="sm-hide">{product.name}</span>
       </div>
       <div className="price-container sm-hide">${product.price},00</div>
