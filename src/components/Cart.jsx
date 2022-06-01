@@ -68,7 +68,7 @@ const Cart = ({ basketProps, productQuantity, clearProduct }) => {
       <div className="products">{products}</div>
       <div className="basketTotalContainer">
         <h4 className="basketTotalTitle">Basket Total</h4>
-        <h4 className="basketTotal">{basketProps.cartCost},00</h4>
+        <h4 className="basketTotal">${basketProps.cartCost},00</h4>
       </div>
     </div>
   );
